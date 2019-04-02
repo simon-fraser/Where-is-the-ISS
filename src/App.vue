@@ -2,14 +2,12 @@
   <div id="app">
     <header class="app-head container grid-md">
       <h1><a href="https://en.wikipedia.org/wiki/International_Space_Station" title="Link to Wikipedia Page" target="_blank">International Space Station</a></h1>
-      <p>The International Space Station is such a amazing experiment, This application shows data from a couple of live feed sources and some additonal interesting information. enjoy :)</p>
-
-      <hr>
+      <p>The International Space Station is an amazing experiment, This application shows data from a couple of live feed sources and some additonal interesting information. enjoy :)</p>
     </header>
 
     <Map :position="position" />
     <Feed />
-    <!-- <Details /> -->
+    <Information />
 
   </div>
 </template>
@@ -26,7 +24,7 @@
     background-color: #f3f3f3;
     color: #555;
     font-size: 14px;
-    font-family: 'Montserrat', Helvetica, Verdana, sans-serif;
+    font-family: Helvetica, Verdana, sans-serif;
     font-weight: 300;
     margin: 0px;
   }
@@ -70,7 +68,7 @@
 <script>
 import Map from './components/Map.vue'
 import Feed from './components/LiveFeed.vue'
-import Details from './components/Details.vue'
+import Information from './components/Information.vue'
 import L from 'leaflet'
 import { setInterval } from 'timers';
 
@@ -79,9 +77,8 @@ export default {
   components: {
     Map,
     Feed,
-    Details
+    Information
   },
-
   data () {
     return {
       position: L.latLng(0, 0)

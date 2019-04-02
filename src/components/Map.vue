@@ -1,6 +1,5 @@
 <template>
   <div>
-    w
     <l-map
       :zoom="zoom"
       :center="position"
