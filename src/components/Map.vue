@@ -37,7 +37,7 @@ export default {
         scrollWheelZoom: false
       },
       icon: L.icon({
-        iconUrl: `${process.env.VUE_APP_SUB_FOLDER}static/international_space_station.svg`,
+        iconUrl: `/static/international_space_station.svg`,
         iconSize: [64, 38],
         iconAnchor: [32, 19]
       })

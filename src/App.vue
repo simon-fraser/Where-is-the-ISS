@@ -2,12 +2,11 @@
   <div id="app">
     <header class="app-head container grid-md">
       <h1><a href="https://en.wikipedia.org/wiki/International_Space_Station" title="Link to Wikipedia Page" target="_blank">International Space Station</a></h1>
-      <p>The International Space Station is an amazing experiment, This application shows data from a couple of live feed sources and some additonal interesting information. enjoy :)</p>
+      <p>The International Space Station is an amazing experiment, this page shows data feeds from the International Space Station.</p>
     </header>
 
     <Map :position="position" />
     <Feed />
-    <Information />
 
   </div>
 </template>
@@ -68,7 +67,6 @@
 <script>
 import Map from './components/Map.vue'
 import Feed from './components/LiveFeed.vue'
-import Information from './components/Information.vue'
 import L from 'leaflet'
 import { setInterval } from 'timers';
 
@@ -76,8 +74,7 @@ export default {
   name: 'app',
   components: {
     Map,
-    Feed,
-    Information
+    Feed
   },
   data () {
     return {
@@ -87,7 +84,7 @@ export default {
   methods: {
     getPOS () {
       setInterval(() => {
-        fetch(process.env.VUE_APP_ISS_POSITION)
+        fetch(`http://api.open-notify.org/iss-now.json`)
           .then((response) => {
             return response.json()
           })

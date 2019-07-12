@@ -3,7 +3,7 @@
     <header class="container grid-md">
       <h2>Live Video Feed</h2>
       <p>
-        The International Space Station has a extensive list of cameras onboard, but most impressivly is the High Definition Earth Viewing (HDEV) cameras which live steam video of Earth back to us which can be viewed online or on NASA TV.<br>
+        The International Space Station has a extensive list of cameras onboard, but most impressivly is the High Definition Earth Viewing (HDEV) cameras which live steam video of Earth back to us, which can be viewed online or on NASA TV.<br>
         This video is a feed directly from the High Definition Earth Viewing cameras.
       </p>
     </header>
