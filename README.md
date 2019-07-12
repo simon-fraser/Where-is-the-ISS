@@ -1,6 +1,6 @@
 # ISS
 
-A little VueJS v2.x experiment to display the location of the [International Space Station](https://en.wikipedia.org/wiki/International_Space_Station).
+A little VueJS v2.x & Leaflet JS experiment to display the location of the [International Space Station](https://en.wikipedia.org/wiki/International_Space_Station).
 
 ## Using:
 
